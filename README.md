@@ -1,8 +1,8 @@
 # First Person Camera Height
 
-A Fabric mod for Minecraft 1.21.1 that lets you adjust your first-person camera height without affecting your player hitbox or collision.
+A Fabric mod for Minecraft 1.21.X that lets you adjust your first-person camera height without affecting your player hitbox or collision.
 
-Made by [ItsThatNova](https://github.com/ItsThatNova).
+Tested on 1.21.1 but theoretically the mixins should be compatible with any 1.21.X version. If not, it would be relatively straight forward for anyone to change the few strings to make it compatible. I may not have the time to do it myself, but feel free to fork or locally update it yourself as needed.
 
 ---
 
@@ -10,7 +10,7 @@ Made by [ItsThatNova](https://github.com/ItsThatNova).
 
 Adds a configurable vertical offset to your first-person camera, from -0.5 to +1.0 blocks in 0.05 increments. Your hands, held items, block targeting crosshair, and projectile spawn position all follow the adjusted height. Your hitbox stays exactly where it normally is.
 
-This is purely a comfort/preference mod — useful if you want a slightly higher or lower perspective than vanilla provides.
+This is purely a comfort/preference mod - useful if you want a slightly higher or lower perspective than vanilla provides.
 
 ---
 
@@ -32,7 +32,7 @@ This is purely a comfort/preference mod — useful if you want a slightly higher
 ## Installation
 
 ### Client only (minimum)
-Install on your client only. Camera height, hand position, and block targeting all work. On multiplayer servers without the mod installed, projectiles will still fire from vanilla eye height — only the visual camera moves.
+Install on your client only. Camera height, hand position, and block targeting all work. On multiplayer servers without the mod installed, projectiles will still fire from vanilla eye height - only the visual camera moves.
 
 ### Client + Server (full experience)
 Install on **both** client and server. Projectile spawn position will match your adjusted camera height. This is required for the full effect on multiplayer.
@@ -45,15 +45,15 @@ This mod is intended for **singleplayer** and **casual/private servers** where a
 
 **It is not recommended for PVP servers.** A player with an elevated offset fires projectiles from a higher position than their visual model suggests, which could be considered an unfair advantage. Please be considerate about where you use it.
 
-> ⚠️ **Anti-cheat notice:** Some public servers run anti-cheat software that may flag the server-side mixin's behaviour (modifying projectile origin position). Use on public servers at your own risk. The mod author is not responsible for bans or other consequences.
+> **Anti-cheat notice:** Some public servers run anti-cheat software that may flag the server-side mixin's behaviour (modifying projectile origin position). Use on public servers at your own risk. The mod author is not responsible for bans or other consequences.
 
 ---
 
-## The observer mismatch — what others see
+## The observer mismatch - what others see
 
-When the mod is installed server-side, your projectiles spawn from your adjusted camera height. However, **other players on the server see your hand animation rendered at vanilla height** — their client has no knowledge of your offset. This means observers will see a slight gap between where your hand appears to be and where the arrow or projectile actually comes from.
+When the mod is installed server-side, your projectiles spawn from your adjusted camera height. However, **other players on the server see your hand animation rendered at vanilla height** - their client has no knowledge of your offset. This means observers will see a slight gap between where your hand appears to be and where the arrow or projectile actually comes from.
 
-This is a fundamental cosmetic limitation of the approach and cannot be fixed without forcing the mod on all clients. It does not affect gameplay for the shooter — your own crosshair and aim are accurate. It's simply a visual quirk from the outside.
+This is a fundamental cosmetic limitation of the approach and cannot be fixed without forcing the mod on all clients. It does not affect gameplay for the shooter - your own crosshair and aim are accurate. It's simply a visual quirk from the outside.
 
 ---
 
@@ -64,7 +64,7 @@ This is a fundamental cosmetic limitation of the approach and cannot be fixed wi
 - Fabric API
 
 **Optional:**
-- [ModMenu](https://modrinth.com/mod/modmenu) — provides in-game config screen access
+- [ModMenu](https://modrinth.com/mod/modmenu) - provides in-game config screen access
 
 ---
 
@@ -80,9 +80,9 @@ Access via ModMenu, or edit `.minecraft/config/firstpersoncameraheight.json` dir
 }
 ```
 
-- `enabled` — `true`/`false`, toggles the offset on or off
-- `offset` — float between `-0.5` and `1.0` (in blocks)
-- `debugLogging` — `true`/`false`, prints sync events to your game log; leave off during normal play
+- `enabled` - `true`/`false`, toggles the offset on or off
+- `offset` - float between `-0.5` and `1.0` (in blocks)
+- `debugLogging` - `true`/`false`, prints sync events to your game log; leave off during normal play
 
 ---
 
@@ -112,4 +112,4 @@ Built jar will be in `build/libs/`.
 
 ## License
 
-MIT — free to fork, modify, and redistribute with attribution.
+MIT â€” free to fork, modify, and redistribute with attribution.
