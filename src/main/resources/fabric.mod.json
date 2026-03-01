@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "fpcameraheight",
+  "version": "${version}",
+  "name": "First Person Camera Height",
+  "description": "Allows adjusting the first person camera height offset without affecting the player hitbox.",
+  "authors": [
+    "ItsThatNova"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/first-person-camera-height",
+    "sources": "https://github.com/ItsThatNova/first-person-camera-height",
+    "issues": "https://github.com/ItsThatNova/first-person-camera-height/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/fpcameraheight/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.itsthatnova.fpcameraheight.FirstPersonCameraHeightClient"
+    ],
+    "main": [
+      "dev.itsthatnova.fpcameraheight.FirstPersonCameraHeightServer"
+    ],
+    "modmenu": [
+      "dev.itsthatnova.fpcameraheight.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "fpcameraheight.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

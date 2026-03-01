@@ -1,0 +1,15 @@
+{
+  "mod.fpcameraheight.name": "First Person Camera Height",
+
+  "fpcameraheight.config.title": "First Person Camera Height",
+  "fpcameraheight.config.enabled": "Enabled",
+  "fpcameraheight.config.enabled.tooltip": "Toggle the camera height offset on or off",
+  "fpcameraheight.config.offset": "Camera Height Offset",
+  "fpcameraheight.config.offset.tooltip": "Adjusts the first person camera height. Does not affect hitbox or server position.",
+  "fpcameraheight.config.offset.value": "Offset: %s blocks",
+  "fpcameraheight.config.reset": "Reset to Default",
+  "fpcameraheight.config.debug": "Debug Logging",
+  "fpcameraheight.config.debug.tooltip": "Prints FPCH sync events to the game log. Useful for troubleshooting. Leave off in normal use.",
+  "fpcameraheight.config.done": "Done",
+  "fpcameraheight.config.cancel": "Cancel"
+}

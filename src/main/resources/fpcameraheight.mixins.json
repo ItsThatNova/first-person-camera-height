@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "dev.itsthatnova.fpcameraheight.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ServerEyePosOffsetMixin"
+  ],
+  "client": [
+    "CameraOffsetMixin",
+    "EyeHeightOffsetMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
