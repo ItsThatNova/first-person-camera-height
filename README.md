@@ -86,7 +86,7 @@ Access via ModMenu, or edit `.minecraft/config/firstpersoncameraheight.json` dir
 
 ---
 
-## How it works (technical)
+## How it works
 
 **CameraOffsetMixin** shifts the camera's Y position after vanilla calculates it each frame. Hands and held items follow naturally since the hand render pass uses the camera as its origin.
 
