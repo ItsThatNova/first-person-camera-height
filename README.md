@@ -112,4 +112,4 @@ Built jar will be in `build/libs/`.
 
 ## License
 
-MIT â€” free to fork, modify, and redistribute with attribution.
+MIT - free to fork, modify, and redistribute with attribution.
